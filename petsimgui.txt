@@ -158,12 +158,12 @@ discord.TextSize = 14.000
 while wait() do
 	if getgenv().eggopen == true then
 		for i,v in pairs(getgc(true)) do
-            if (typeof(v) == 'table' and rawget(v, 'OpenEgg')) then
-                v.OpenEgg = function()
-                    return
-        end
-    end
-end
+           		if (typeof(v) == 'table' and rawget(v, 'OpenEgg')) then
+                		v.OpenEgg = function()
+                    			return
+				end
+			end
+		end
 	end
 	if getgenv().givegamepass == true then
 		local main = debug.getupvalues(require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library")).Save.Get)[2][game.Players.LocalPlayer].save.Gamepasses

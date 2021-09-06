@@ -1,0 +1,186 @@
+local ScreenGui = Instance.new("ScreenGui")
+local petsimgui = Instance.new("Frame")
+local credit = Instance.new("TextLabel")
+local eggopenbutton = Instance.new("TextButton")
+local eggopentext = Instance.new("TextLabel")
+local givegamepasstext = Instance.new("TextLabel")
+local givegamepassbutton = Instance.new("TextButton")
+local autoorbsbutton = Instance.new("TextButton")
+local autoorbstext = Instance.new("TextLabel")
+local visualstuffbutton = Instance.new("TextButton")
+local visualstufftext = Instance.new("TextLabel")
+local askifsuggest = Instance.new("TextLabel")
+local discord = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+
+petsimgui.Name = "petsimgui"
+petsimgui.Parent = ScreenGui
+petsimgui.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+petsimgui.Position = UDim2.new(0.637599111, 0, 0.598662198, 0)
+petsimgui.Size = UDim2.new(0, 300, 0, 201)
+petsimgui.Active = true
+petsimgui.Draggable = true
+
+credit.Name = "credit"
+credit.Parent = petsimgui
+credit.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+credit.Size = UDim2.new(0, 300, 0, 20)
+credit.Font = Enum.Font.Ubuntu
+credit.Text = "Pet Simulator X | By sqqssss"
+credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextSize = 14.000
+credit.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextWrapped = true
+
+eggopenbutton.Name = "eggopenbutton"
+eggopenbutton.Parent = petsimgui
+eggopenbutton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+eggopenbutton.Position = UDim2.new(0.0199999996, 0, 0.118181817, 0)
+eggopenbutton.Size = UDim2.new(0, 30, 0, 30)
+eggopenbutton.Font = Enum.Font.SourceSans
+eggopenbutton.Text = " "
+eggopenbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+eggopenbutton.TextSize = 14.000
+eggopenbutton.MouseButton1Down:connect(function()
+	getgenv().eggopen = true;
+end)
+
+eggopentext.Name = "eggopentext"
+eggopentext.Parent = petsimgui
+eggopentext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+eggopentext.BackgroundTransparency = 1.000
+eggopentext.Position = UDim2.new(0.140000001, 0, 0.118181817, 0)
+eggopentext.Size = UDim2.new(0, 251, 0, 30)
+eggopentext.Font = Enum.Font.Ubuntu
+eggopentext.Text = "Skip egg open animations"
+eggopentext.TextColor3 = Color3.fromRGB(255, 255, 255)
+eggopentext.TextSize = 14.000
+eggopentext.TextXAlignment = Enum.TextXAlignment.Left
+
+givegamepasstext.Name = "givegamepasstext"
+givegamepasstext.Parent = petsimgui
+givegamepasstext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+givegamepasstext.BackgroundTransparency = 1.000
+givegamepasstext.Position = UDim2.new(0.140000001, 0, 0.286363631, 0)
+givegamepasstext.Size = UDim2.new(0, 251, 0, 30)
+givegamepasstext.Font = Enum.Font.Ubuntu
+givegamepasstext.Text = "Give hoverboard, teleport, skip egg, auto egg"
+givegamepasstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+givegamepasstext.TextSize = 13.000
+givegamepasstext.TextXAlignment = Enum.TextXAlignment.Left
+
+givegamepassbutton.Name = "givegamepassbutton"
+givegamepassbutton.Parent = petsimgui
+givegamepassbutton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+givegamepassbutton.Position = UDim2.new(0.0199999996, 0, 0.286363631, 0)
+givegamepassbutton.Size = UDim2.new(0, 30, 0, 30)
+givegamepassbutton.Font = Enum.Font.SourceSans
+givegamepassbutton.Text = " "
+givegamepassbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+givegamepassbutton.TextSize = 14.000
+givegamepassbutton.MouseButton1Down:connect(function()
+	getgenv().givegamepass = true;
+end)
+
+autoorbsbutton.Name = "autoorbsbutton"
+autoorbsbutton.Parent = petsimgui
+autoorbsbutton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+autoorbsbutton.Position = UDim2.new(0.0199999996, 0, 0.459090918, 0)
+autoorbsbutton.Size = UDim2.new(0, 30, 0, 30)
+autoorbsbutton.Font = Enum.Font.SourceSans
+autoorbsbutton.Text = " "
+autoorbsbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoorbsbutton.TextSize = 14.000
+autoorbsbutton.MouseButton1Down:connect(function()
+	getgenv().autoorbs = true;
+end)
+
+autoorbstext.Name = "autoorbstext"
+autoorbstext.Parent = petsimgui
+autoorbstext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autoorbstext.BackgroundTransparency = 1.000
+autoorbstext.Position = UDim2.new(0.140000001, 0, 0.459090889, 0)
+autoorbstext.Size = UDim2.new(0, 251, 0, 30)
+autoorbstext.Font = Enum.Font.Ubuntu
+autoorbstext.Text = "Auto collect orbs"
+autoorbstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoorbstext.TextSize = 14.000
+autoorbstext.TextXAlignment = Enum.TextXAlignment.Left
+
+visualstuffbutton.Name = "visualstuffbutton"
+visualstuffbutton.Parent = petsimgui
+visualstuffbutton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+visualstuffbutton.Position = UDim2.new(0.0199999996, 0, 0.626999974, 0)
+visualstuffbutton.Size = UDim2.new(0, 30, 0, 30)
+visualstuffbutton.Font = Enum.Font.SourceSans
+visualstuffbutton.Text = " "
+visualstuffbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+visualstuffbutton.TextSize = 14.000
+visualstuffbutton.MouseButton1Down:connect(function()
+	getgenv().visualstuff = true;
+end)
+
+visualstufftext.Name = "visualstufftext"
+visualstufftext.Parent = petsimgui
+visualstufftext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+visualstufftext.BackgroundTransparency = 1.000
+visualstufftext.Position = UDim2.new(0.140000001, 0, 0.625644505, 0)
+visualstufftext.Size = UDim2.new(0, 251, 0, 30)
+visualstufftext.Font = Enum.Font.Ubuntu
+visualstufftext.Text = "Visual Lucky! and Mythical Hunter! effects"
+visualstufftext.TextColor3 = Color3.fromRGB(255, 255, 255)
+visualstufftext.TextSize = 14.000
+visualstufftext.TextXAlignment = Enum.TextXAlignment.Left
+
+askifsuggest.Name = "askifsuggest"
+askifsuggest.Parent = petsimgui
+askifsuggest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+askifsuggest.BackgroundTransparency = 1.000
+askifsuggest.Position = UDim2.new(0.166666672, 0, 0.776119411, 0)
+askifsuggest.Size = UDim2.new(0, 200, 0, 22)
+askifsuggest.Font = Enum.Font.Ubuntu
+askifsuggest.Text = "Have any suggestions for scripts? Join the discord."
+askifsuggest.TextColor3 = Color3.fromRGB(255, 255, 255)
+askifsuggest.TextSize = 14.000
+
+discord.Name = "discord"
+discord.Parent = petsimgui
+discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+discord.BackgroundTransparency = 1.000
+discord.Position = UDim2.new(0.166666672, 0, 0.860696495, 0)
+discord.Size = UDim2.new(0, 200, 0, 22)
+discord.Font = Enum.Font.Ubuntu
+discord.Text = "https://discord.gg/M5zGYEwZZa"
+discord.TextColor3 = Color3.fromRGB(93, 0, 255)
+discord.TextSize = 14.000
+
+while wait() do
+	if getgenv().eggopen == true then
+		for i,v in pairs(getgc(true)) do
+            if (typeof(v) == 'table' and rawget(v, 'OpenEgg')) then
+                v.OpenEgg = function()
+                    return
+        end
+    end
+end
+	end
+	if getgenv().givegamepass == true then
+		local main = debug.getupvalues(require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library")).Save.Get)[2][game.Players.LocalPlayer].save.Gamepasses
+		table.insert(main,18674296)
+		table.insert(main,18674298)
+		table.insert(main,18674321)
+		table.insert(main,21176989)
+	end
+	if getgenv().autoorbs == true then
+		workspace.__THINGS.Orbs.ChildAdded:Connect(function(v)
+			v = {{tostring(v.Name)}};
+			workspace.__THINGS.__REMOTES["claim orbs"]:FireServer(v)
+		end)
+	end
+	if getgenv().visualstuff == true then
+		local main = debug.getupvalues(require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library")).Save.Get)[2][game.Players.LocalPlayer].save.Gamepasses
+		table.insert(main,21583760)
+		table.insert(main,21641016)
+	end
+end
